@@ -8,7 +8,4 @@ public class Historical : PlayType
         var comedy = new Comedy().CalculateAmount(performance, lines);
         return tragedy + comedy;
     }
-
-    public override int CalculateCredits(Performance performance) =>
-        new Tragedy().CalculateCredits(performance) + new Comedy().CalculateCredits(performance);
 }

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TheatricalPlayersRefactoringKata.Application.Entitties;
 
 namespace TheatricalPlayersRefactoringKata.Application.Interfaces;
 public interface IStatementPrinter

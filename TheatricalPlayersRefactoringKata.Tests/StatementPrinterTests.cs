@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using ApprovalTests;
 using ApprovalTests.Reporters;
+using TheatricalPlayersRefactoringKata.Application.Entitties;
 using TheatricalPlayersRefactoringKata.Application.Entitties.Types;
 using TheatricalPlayersRefactoringKata.Application.UseCases;
 using Xunit;
@@ -15,7 +16,7 @@ namespace TheatricalPlayersRefactoringKata.Tests
         {
             var plays = new Dictionary<string, Play>
             {
-                { "hamlet", new Play("Hamlet", 4024, new Historical()) },
+                { "hamlet", new Play("Hamlet", 4024, new Tragedy()) },
                 { "as-like", new Play("As You Like It", 2670, new Comedy()) },
                 { "othello", new Play("Othello", 3560, new Tragedy()) }
             };

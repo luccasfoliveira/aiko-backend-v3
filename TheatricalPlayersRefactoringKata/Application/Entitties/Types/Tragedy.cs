@@ -1,5 +1,5 @@
 namespace TheatricalPlayersRefactoringKata.Application.Entitties.Types;
-        
+
 public class Tragedy : PlayType
 {
     public override decimal CalculateAmount(Performance performance, int lines)

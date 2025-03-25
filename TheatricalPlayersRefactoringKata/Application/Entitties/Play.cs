@@ -1,7 +1,7 @@
 using System;
 using TheatricalPlayersRefactoringKata.Application.Entitties.Types;
 
-namespace TheatricalPlayersRefactoringKata;
+namespace TheatricalPlayersRefactoringKata.Application.Entitties;
 
 public class Play
 {

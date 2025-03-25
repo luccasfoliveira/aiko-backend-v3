@@ -1,3 +1,5 @@
+using TheatricalPlayersRefactoringKata.Application.Entitties;
+
 namespace TheatricalPlayersRefactoringKata.Application.Interfaces;
 
 public interface IPlayCalculator

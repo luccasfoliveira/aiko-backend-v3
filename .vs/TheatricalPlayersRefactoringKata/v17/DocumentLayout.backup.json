@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}|TheatricalPlayersRefactoringKata\\TheatricalPlayersRefactoringKata.csproj|c:\\users\\luccas\\source\\repos\\aiko-backend-v3\\theatricalplayersrefactoringkata\\application\\entitties\\types\\historical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}|TheatricalPlayersRefactoringKata\\TheatricalPlayersRefactoringKata.csproj|solutionrelative:theatricalplayersrefactoringkata\\application\\entitties\\types\\historical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}|TheatricalPlayersRefactoringKata\\TheatricalPlayersRefactoringKata.csproj|c:\\users\\luccas\\source\\repos\\aiko-backend-v3\\theatricalplayersrefactoringkata\\application\\entitties\\play.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}|TheatricalPlayersRefactoringKata\\TheatricalPlayersRefactoringKata.csproj|solutionrelative:theatricalplayersrefactoringkata\\application\\entitties\\play.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}|TheatricalPlayersRefactoringKata\\TheatricalPlayersRefactoringKata.csproj|c:\\users\\luccas\\source\\repos\\aiko-backend-v3\\theatricalplayersrefactoringkata\\application\\entitties\\performance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}|TheatricalPlayersRefactoringKata\\TheatricalPlayersRefactoringKata.csproj|solutionrelative:theatricalplayersrefactoringkata\\application\\entitties\\performance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}|TheatricalPlayersRefactoringKata\\TheatricalPlayersRefactoringKata.csproj|c:\\users\\luccas\\source\\repos\\aiko-backend-v3\\theatricalplayersrefactoringkata\\application\\entitties\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}|TheatricalPlayersRefactoringKata\\TheatricalPlayersRefactoringKata.csproj|solutionrelative:theatricalplayersrefactoringkata\\application\\entitties\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}|TheatricalPlayersRefactoringKata\\TheatricalPlayersRefactoringKata.csproj|c:\\users\\luccas\\source\\repos\\aiko-backend-v3\\theatricalplayersrefactoringkata\\application\\interfaces\\istatementprinter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}|TheatricalPlayersRefactoringKata\\TheatricalPlayersRefactoringKata.csproj|solutionrelative:theatricalplayersrefactoringkata\\application\\interfaces\\istatementprinter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}|TheatricalPlayersRefactoringKata\\TheatricalPlayersRefactoringKata.csproj|c:\\users\\luccas\\source\\repos\\aiko-backend-v3\\theatricalplayersrefactoringkata\\application\\interfaces\\iplaycalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}|TheatricalPlayersRefactoringKata\\TheatricalPlayersRefactoringKata.csproj|solutionrelative:theatricalplayersrefactoringkata\\application\\interfaces\\iplaycalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AFBF20D-3D97-46EC-B506-8B7C82598951}|TheatricalPlayersRefactoringKata.Tests\\TheatricalPlayersRefactoringKata.Tests.csproj|c:\\users\\luccas\\source\\repos\\aiko-backend-v3\\theatricalplayersrefactoringkata.tests\\statementprintertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AFBF20D-3D97-46EC-B506-8B7C82598951}|TheatricalPlayersRefactoringKata.Tests\\TheatricalPlayersRefactoringKata.Tests.csproj|solutionrelative:theatricalplayersrefactoringkata.tests\\statementprintertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}|TheatricalPlayersRefactoringKata\\TheatricalPlayersRefactoringKata.csproj|c:\\users\\luccas\\source\\repos\\aiko-backend-v3\\theatricalplayersrefactoringkata\\application\\usecases\\playcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}|TheatricalPlayersRefactoringKata\\TheatricalPlayersRefactoringKata.csproj|solutionrelative:theatricalplayersrefactoringkata\\application\\usecases\\playcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}|TheatricalPlayersRefactoringKata\\TheatricalPlayersRefactoringKata.csproj|c:\\users\\luccas\\source\\repos\\aiko-backend-v3\\theatricalplayersrefactoringkata\\application\\usecases\\statementprinter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D24051E-3E14-4B98-A8B3-DFDA7E4ACD7B}|TheatricalPlayersRefactoringKata\\TheatricalPlayersRefactoringKata.csproj|solutionrelative:theatricalplayersrefactoringkata\\application\\usecases\\statementprinter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlayCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\TheatricalPlayersRefactoringKata\\Application\\UseCases\\PlayCalculator.cs",
+              "RelativeDocumentMoniker": "TheatricalPlayersRefactoringKata\\Application\\UseCases\\PlayCalculator.cs",
+              "ToolTip": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\TheatricalPlayersRefactoringKata\\Application\\UseCases\\PlayCalculator.cs",
+              "RelativeToolTip": "TheatricalPlayersRefactoringKata\\Application\\UseCases\\PlayCalculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T18:16:51.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IStatementPrinter.cs",
+              "DocumentMoniker": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\TheatricalPlayersRefactoringKata\\Application\\Interfaces\\IStatementPrinter.cs",
+              "RelativeDocumentMoniker": "TheatricalPlayersRefactoringKata\\Application\\Interfaces\\IStatementPrinter.cs",
+              "ToolTip": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\TheatricalPlayersRefactoringKata\\Application\\Interfaces\\IStatementPrinter.cs",
+              "RelativeToolTip": "TheatricalPlayersRefactoringKata\\Application\\Interfaces\\IStatementPrinter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T18:16:38.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IPlayCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\TheatricalPlayersRefactoringKata\\Application\\Interfaces\\IPlayCalculator.cs",
+              "RelativeDocumentMoniker": "TheatricalPlayersRefactoringKata\\Application\\Interfaces\\IPlayCalculator.cs",
+              "ToolTip": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\TheatricalPlayersRefactoringKata\\Application\\Interfaces\\IPlayCalculator.cs",
+              "RelativeToolTip": "TheatricalPlayersRefactoringKata\\Application\\Interfaces\\IPlayCalculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T18:16:30.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Play.cs",
+              "DocumentMoniker": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\TheatricalPlayersRefactoringKata\\Application\\Entitties\\Play.cs",
+              "RelativeDocumentMoniker": "TheatricalPlayersRefactoringKata\\Application\\Entitties\\Play.cs",
+              "ToolTip": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\TheatricalPlayersRefactoringKata\\Application\\Entitties\\Play.cs",
+              "RelativeToolTip": "TheatricalPlayersRefactoringKata\\Application\\Entitties\\Play.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T18:16:11.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Performance.cs",
+              "DocumentMoniker": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\TheatricalPlayersRefactoringKata\\Application\\Entitties\\Performance.cs",
+              "RelativeDocumentMoniker": "TheatricalPlayersRefactoringKata\\Application\\Entitties\\Performance.cs",
+              "ToolTip": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\TheatricalPlayersRefactoringKata\\Application\\Entitties\\Performance.cs",
+              "RelativeToolTip": "TheatricalPlayersRefactoringKata\\Application\\Entitties\\Performance.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T18:16:07.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Invoice.cs",
+              "DocumentMoniker": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\TheatricalPlayersRefactoringKata\\Application\\Entitties\\Invoice.cs",
+              "RelativeDocumentMoniker": "TheatricalPlayersRefactoringKata\\Application\\Entitties\\Invoice.cs",
+              "ToolTip": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\TheatricalPlayersRefactoringKata\\Application\\Entitties\\Invoice.cs",
+              "RelativeToolTip": "TheatricalPlayersRefactoringKata\\Application\\Entitties\\Invoice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T18:14:45.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Historical.cs",
+              "DocumentMoniker": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\TheatricalPlayersRefactoringKata\\Application\\Entitties\\Types\\Historical.cs",
+              "RelativeDocumentMoniker": "TheatricalPlayersRefactoringKata\\Application\\Entitties\\Types\\Historical.cs",
+              "ToolTip": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\TheatricalPlayersRefactoringKata\\Application\\Entitties\\Types\\Historical.cs",
+              "RelativeToolTip": "TheatricalPlayersRefactoringKata\\Application\\Entitties\\Types\\Historical.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T17:08:45.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StatementPrinterTests.cs",
+              "DocumentMoniker": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\TheatricalPlayersRefactoringKata.Tests\\StatementPrinterTests.cs",
+              "RelativeDocumentMoniker": "TheatricalPlayersRefactoringKata.Tests\\StatementPrinterTests.cs",
+              "ToolTip": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\TheatricalPlayersRefactoringKata.Tests\\StatementPrinterTests.cs",
+              "RelativeToolTip": "TheatricalPlayersRefactoringKata.Tests\\StatementPrinterTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T16:27:00.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StatementPrinter.cs",
+              "DocumentMoniker": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\TheatricalPlayersRefactoringKata\\Application\\UseCases\\StatementPrinter.cs",
+              "RelativeDocumentMoniker": "TheatricalPlayersRefactoringKata\\Application\\UseCases\\StatementPrinter.cs",
+              "ToolTip": "C:\\Users\\LUCCAS\\source\\repos\\aiko-backend-v3\\TheatricalPlayersRefactoringKata\\Application\\UseCases\\StatementPrinter.cs",
+              "RelativeToolTip": "TheatricalPlayersRefactoringKata\\Application\\UseCases\\StatementPrinter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T16:34:50.463Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
