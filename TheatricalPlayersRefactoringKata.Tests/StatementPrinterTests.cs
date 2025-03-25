@@ -1,8 +1,8 @@
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using ApprovalTests;
 using ApprovalTests.Reporters;
 using TheatricalPlayersRefactoringKata.Application.Entitties;
-using TheatricalPlayersRefactoringKata.Application.Entitties.Types;
 using TheatricalPlayersRefactoringKata.Application.UseCases;
 using Xunit;
 
@@ -16,9 +16,9 @@ namespace TheatricalPlayersRefactoringKata.Tests
         {
             var plays = new Dictionary<string, Play>
             {
-                { "hamlet", new Play("Hamlet", 4024, new Tragedy()) },
-                { "as-like", new Play("As You Like It", 2670, new Comedy()) },
-                { "othello", new Play("Othello", 3560, new Tragedy()) }
+                { "hamlet", new Play("Hamlet", 4024, "tragedy") },
+                { "as-like", new Play("As You Like It", 2670,"comedy") },
+                { "othello", new Play("Othello", 3560, "tragedy") }
             };
 
             Invoice invoice = new Invoice(
@@ -32,8 +32,8 @@ namespace TheatricalPlayersRefactoringKata.Tests
             );
 
             var playCalculator = new PlayCalculator();
-            StatementPrinter statementPrinter = new StatementPrinter(playCalculator);
-            var result = statementPrinter.Print(invoice, plays);
+            StatementService statementService = new StatementService(playCalculator, new TextStatementFormatter());
+            var result = statementService.GenerateStatement(invoice, plays);
 
             Approvals.Verify(result);
         }
@@ -44,12 +44,12 @@ namespace TheatricalPlayersRefactoringKata.Tests
         {
             var plays = new Dictionary<string, Play>
             {
-                { "hamlet", new Play("Hamlet", 4024, new Tragedy()) },
-                { "as-like", new Play("As You Like It", 2670, new Comedy()) },
-                { "othello", new Play("Othello", 3560, new Tragedy()) },
-                { "henry-v", new Play("Henry V", 3227, new Historical()) },
-                { "john", new Play("King John", 2648,new Historical()) },
-                { "richard-iii", new Play("Richard III", 3718, new Historical()) }
+                { "hamlet", new Play("Hamlet", 4024, "tragedy") },
+                { "as-like", new Play("As You Like It", 2670, "comedy") },
+                { "othello", new Play("Othello", 3560, "tragedy") },
+                { "henry-v", new Play("Henry V", 3227, "history") },
+                { "john", new Play("King John", 2648, "history") },
+                { "richard-iii", new Play("Richard III", 3718, "history") }
             };
 
             Invoice invoice = new Invoice(
@@ -66,8 +66,8 @@ namespace TheatricalPlayersRefactoringKata.Tests
             );
 
             var playCalculator = new PlayCalculator();
-            StatementPrinter statementPrinter = new StatementPrinter(playCalculator);
-            var result = statementPrinter.Print(invoice, plays);
+            StatementService statementService = new StatementService(playCalculator, new TextStatementFormatter());
+            var result = statementService.GenerateStatement(invoice, plays);
 
             Approvals.Verify(result);
         }

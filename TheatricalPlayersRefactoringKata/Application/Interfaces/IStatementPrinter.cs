@@ -1,8 +1,7 @@
-using System.Collections.Generic;
-using TheatricalPlayersRefactoringKata.Application.Entitties;
+using TheatricalPlayersRefactoringKata.Application.Entitties.DTOs;
 
 namespace TheatricalPlayersRefactoringKata.Application.Interfaces;
-public interface IStatementPrinter
+public interface IStatementFormatter
 {
-    string Print(Invoice invoice, Dictionary<string, Play> plays);
+    string Format(StatementResultDTO statement);
 }

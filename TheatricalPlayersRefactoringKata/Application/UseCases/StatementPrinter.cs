@@ -2,24 +2,24 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 using TheatricalPlayersRefactoringKata.Application.Entitties;
+using TheatricalPlayersRefactoringKata.Application.Entitties.DTOs;
 using TheatricalPlayersRefactoringKata.Application.Interfaces;
 
 namespace TheatricalPlayersRefactoringKata.Application.UseCases;
 
-public class StatementPrinter : IStatementPrinter
+public class StatementService
 {
     private readonly IPlayCalculator _playCalculator;
+    private readonly IStatementFormatter _statementFormatter;
 
-    public StatementPrinter(IPlayCalculator playCalculator) =>
-        _playCalculator = playCalculator;
+    public StatementService(IPlayCalculator playCalculator, IStatementFormatter statementFormatter) =>
+        (_playCalculator, _statementFormatter) = (playCalculator, statementFormatter);
 
-    public string Print(Invoice invoice, Dictionary<string, Play> plays)
+    public string GenerateStatement(Invoice invoice, Dictionary<string, Play> plays)
     {
         decimal totalAmount = 0;
-        var volumeCredits = 0;
-        var result = new StringBuilder($"Statement for {invoice.Customer}\n");
-
-        CultureInfo cultureInfo = new CultureInfo("en-US");
+        int volumeCredits = 0;
+        var performanceSummaries = new List<PerformanceSummaryDTO>();
 
         foreach (var perf in invoice.Performances)
         {
@@ -30,12 +30,11 @@ public class StatementPrinter : IStatementPrinter
             volumeCredits += thisCredits;
             totalAmount += thisAmount;
 
-            result.AppendFormat(cultureInfo, $"  {play.Name}: {(thisAmount / 100).ToString("C", cultureInfo)} ({perf.Audience} seats)\n");
+            performanceSummaries.Add(new PerformanceSummaryDTO(play.Name, thisAmount, perf.Audience));
         }
 
-        result.AppendFormat(cultureInfo, $"Amount owed is {(totalAmount / 100).ToString("C", cultureInfo)}\n");
-        result.AppendFormat($"You earned {volumeCredits} credits\n");
+        var statement = new StatementResultDTO(invoice.Customer, totalAmount, volumeCredits, performanceSummaries);
 
-        return result.ToString();
+        return _statementFormatter.Format(statement);
     }
 }
