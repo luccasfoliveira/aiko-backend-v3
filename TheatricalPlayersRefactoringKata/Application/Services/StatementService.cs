@@ -1,11 +1,9 @@
 using System.Collections.Generic;
-using System.Globalization;
-using System.Text;
-using TheatricalPlayersRefactoringKata.Application.Entitties;
-using TheatricalPlayersRefactoringKata.Application.Entitties.DTOs;
-using TheatricalPlayersRefactoringKata.Application.Interfaces;
+using TheatricalPlayersRefactoringKata.Core.Entitties;
+using TheatricalPlayersRefactoringKata.Core.Entitties.DTOs;
+using TheatricalPlayersRefactoringKata.Core.Interfaces;
 
-namespace TheatricalPlayersRefactoringKata.Application.UseCases;
+namespace TheatricalPlayersRefactoringKata.Application.Services;
 
 public class StatementService
 {

@@ -1,6 +1,7 @@
 using System;
+using TheatricalPlayersRefactoringKata.Core.Entitties;
 
-namespace TheatricalPlayersRefactoringKata.Application.Entitties.Types;
+namespace TheatricalPlayersRefactoringKata.Core.Entitties.Types;
 
 public abstract class PlayType
 {

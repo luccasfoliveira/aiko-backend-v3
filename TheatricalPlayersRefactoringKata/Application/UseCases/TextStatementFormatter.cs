@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using System.Text;
-using TheatricalPlayersRefactoringKata.Application.Entitties.DTOs;
-using TheatricalPlayersRefactoringKata.Application.Interfaces;
+using TheatricalPlayersRefactoringKata.Core.Entitties.DTOs;
+using TheatricalPlayersRefactoringKata.Core.Interfaces;
 
 namespace TheatricalPlayersRefactoringKata.Application.UseCases;
 public class TextStatementFormatter: IStatementFormatter

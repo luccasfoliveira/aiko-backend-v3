@@ -1,7 +1,7 @@
-using TheatricalPlayersRefactoringKata.Application.Entitties;
-using TheatricalPlayersRefactoringKata.Application.Interfaces;
+using TheatricalPlayersRefactoringKata.Core.Entitties;
+using TheatricalPlayersRefactoringKata.Core.Interfaces;
 
-namespace TheatricalPlayersRefactoringKata.Application.UseCases;
+namespace TheatricalPlayersRefactoringKata.Application.Services;
 public class PlayCalculator : IPlayCalculator
 {
     public decimal CalculateAmount(Performance performance, Play play) =>

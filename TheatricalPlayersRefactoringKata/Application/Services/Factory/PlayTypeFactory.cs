@@ -1,17 +1,15 @@
 ﻿using System;
-using TheatricalPlayersRefactoringKata.Application.Entitties.Types;
+using TheatricalPlayersRefactoringKata.Core.Entitties.Types;
 
-namespace TheatricalPlayersRefactoringKata.Application.UseCases.Factory;
+namespace TheatricalPlayersRefactoringKata.Application.Services.Factory;
 public static class PlayTypeFactory
 {
-    public static PlayType Create(string type)
-    {
-        return type switch
+    public static PlayType Create(string type) =>
+        type.ToLower() switch
         {
             "tragedy" => new Tragedy(),
             "comedy" => new Comedy(),
             "history" => new Historical(),
             _ => throw new ArgumentException("Unknown play type", nameof(type))
         };
-    }
 }

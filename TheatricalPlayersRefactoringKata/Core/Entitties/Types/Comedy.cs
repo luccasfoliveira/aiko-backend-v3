@@ -1,4 +1,6 @@
-namespace TheatricalPlayersRefactoringKata.Application.Entitties.Types;
+using TheatricalPlayersRefactoringKata.Core.Entitties;
+
+namespace TheatricalPlayersRefactoringKata.Core.Entitties.Types;
 
 public class Comedy : PlayType
 {
@@ -14,5 +16,5 @@ public class Comedy : PlayType
     }
 
     public override int CalculateCredits(Performance performance) =>
-        base.CalculateCredits(performance) + (performance.Audience / 5);
+        base.CalculateCredits(performance) + performance.Audience / 5;
 }

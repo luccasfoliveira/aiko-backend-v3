@@ -1,4 +1,6 @@
-namespace TheatricalPlayersRefactoringKata.Application.Entitties.Types;
+using TheatricalPlayersRefactoringKata.Core.Entitties;
+
+namespace TheatricalPlayersRefactoringKata.Core.Entitties.Types;
 
 public class Tragedy : PlayType
 {

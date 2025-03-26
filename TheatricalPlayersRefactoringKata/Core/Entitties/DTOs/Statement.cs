@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace TheatricalPlayersRefactoringKata.Application.Entitties.DTOs;
+namespace TheatricalPlayersRefactoringKata.Core.Entitties.DTOs;
 public class Statement
 {
     [XmlElement("Customer")]
