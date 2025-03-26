@@ -30,10 +30,11 @@ public class StatementService
             volumeCredits += thisCredits;
             totalAmount += thisAmount;
 
-            performanceSummaries.Add(new PerformanceSummaryDTO(play.Name, thisAmount, perf.Audience));
+            thisAmount /= 100;
+            performanceSummaries.Add(new PerformanceSummaryDTO(play.Name, thisAmount, perf.Audience, thisCredits));
         }
-
-        var statement = new StatementResultDTO(invoice.Customer, totalAmount, volumeCredits, performanceSummaries);
+        totalAmount /= 100;
+        var statement = new Statement(invoice.Customer, totalAmount, volumeCredits, performanceSummaries);
 
         return _statementFormatter.Format(statement);
     }

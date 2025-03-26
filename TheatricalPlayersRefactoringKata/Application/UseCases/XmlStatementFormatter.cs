@@ -1,20 +1,25 @@
 ﻿using System.IO;
+using System.Text;
+using System.Xml;
 using System.Xml.Serialization;
 using TheatricalPlayersRefactoringKata.Application.Entitties.DTOs;
 using TheatricalPlayersRefactoringKata.Application.Interfaces;
 
-namespace TheatricalPlayersRefactoringKata.Application.UseCases
+namespace TheatricalPlayersRefactoringKata.Application.UseCases;
+public class XmlStatementFormatter: IStatementFormatter
 {
-    public class XmlStatementFormatter: IStatementFormatter
+    public string Format(Statement statement)
     {
-        public string Format(StatementResultDTO statement)
+        using (var memoryStream = new MemoryStream())
+        using (var streamWriter = new StreamWriter(memoryStream, Encoding.UTF8))
+        using (var xmlWriter = XmlWriter.Create(streamWriter, new XmlWriterSettings { Indent = true }))
         {
-            var stringWriter = new StringWriter();
-            var xmlSerializer = new XmlSerializer(typeof(StatementResultDTO));
+            var xmlSerializer = new XmlSerializer(typeof(Statement));
+            xmlSerializer.Serialize(xmlWriter, statement);
 
-            xmlSerializer.Serialize(stringWriter, statement);
+            streamWriter.Flush();
 
-            return stringWriter.ToString();
+            return Encoding.UTF8.GetString(memoryStream.ToArray());
         }
     }
 }
