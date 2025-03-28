@@ -2,11 +2,12 @@ using System.Collections.Generic;
 using ApprovalTests;
 using ApprovalTests.Reporters;
 using TheatricalPlayersRefactoringKata.Application.Services;
-using TheatricalPlayersRefactoringKata.Application.UseCases;
 using TheatricalPlayersRefactoringKata.Core.Entitties;
 using Xunit;
+using System.Threading.Tasks;
 
 namespace TheatricalPlayersRefactoringKata.Tests;
+
 public class StatementPrinterTests
 {
     private Dictionary<string, Play> GetPlays() =>
@@ -34,9 +35,10 @@ public class StatementPrinterTests
             }
         );
 
+    // NÃO HÁ A NECESSIDADE DESTE TESTE
     [Fact]
     [UseReporter(typeof(DiffReporter))]
-    public void TestStatementExampleLegacy()
+    public async Task TestStatementExampleLegacy()
     {
         var plays = GetPlays();
         var invoice = new Invoice(
@@ -51,35 +53,38 @@ public class StatementPrinterTests
 
         var playCalculator = new PlayCalculator();
         var statementService = new StatementService(playCalculator, new TextStatementFormatter());
-        var result = statementService.GenerateStatement(invoice, plays);
+
+        var result = await statementService.GenerateStatementAsync(invoice, plays);
 
         Approvals.Verify(result);
     }
 
     [Fact]
     [UseReporter(typeof(DiffReporter))]
-    public void TestTextStatementExample()
+    public async Task TestTextStatementExample()
     {
         var plays = GetPlays();
         var invoice = GetInvoice();
 
         var playCalculator = new PlayCalculator();
         var statementService = new StatementService(playCalculator, new TextStatementFormatter());
-        var result = statementService.GenerateStatement(invoice, plays);
+
+        var result = await statementService.GenerateStatementAsync(invoice, plays);
 
         Approvals.Verify(result);
     }
 
     [Fact]
     [UseReporter(typeof(DiffReporter))]
-    public void TestXmlStatementExample()
+    public async Task TestXmlStatementExample()
     {
         var plays = GetPlays();
         var invoice = GetInvoice();
 
         var playCalculator = new PlayCalculator();
         var statementService = new StatementService(playCalculator, new XmlStatementFormatter());
-        var result = statementService.GenerateStatement(invoice, plays);
+
+        var result = await statementService.GenerateStatementAsync(invoice, plays);
 
         Approvals.Verify(result);
     }

@@ -2,24 +2,26 @@
 using System.Xml.Serialization;
 
 namespace TheatricalPlayersRefactoringKata.Core.Entitties.DTOs;
-public class Statement
+
+[XmlRoot("Statement")]
+public class StatementDTO
 {
     [XmlElement("Customer")]
-    public string Customer { get; set; }
+    public string Customer { get; init; }
 
     [XmlArray("Items")]
     [XmlArrayItem("Item")]
-    public List<PerformanceSummaryDTO> PerformanceSummaries { get; set; }
+    public List<PerformanceSummaryDTO> PerformanceSummaries { get; init; }
 
     [XmlElement("AmountOwed")]
-    public decimal TotalAmount { get; set; }
+    public decimal TotalAmount { get; init; }
 
     [XmlElement("EarnedCredits")]
-    public int VolumeCredits { get; set; }
+    public int VolumeCredits { get; init; }
 
-    public Statement() { }
+    public StatementDTO() { }
 
-    public Statement(string customer, decimal totalAmount, int volumeCredits, List<PerformanceSummaryDTO> performanceSummaries) =>
+    public StatementDTO(string customer, decimal totalAmount, int volumeCredits, List<PerformanceSummaryDTO> performanceSummaries) =>
         (Customer, TotalAmount, VolumeCredits, PerformanceSummaries) =
         (customer, totalAmount, volumeCredits, performanceSummaries ?? new List<PerformanceSummaryDTO>());
 }

@@ -1,7 +1,8 @@
+using System.Threading.Tasks;
 using TheatricalPlayersRefactoringKata.Core.Entitties.DTOs;
 
 namespace TheatricalPlayersRefactoringKata.Core.Interfaces;
 public interface IStatementFormatter
 {
-    string Format(Statement statement);
+    Task<string> FormatAsync(StatementDTO statement);
 }

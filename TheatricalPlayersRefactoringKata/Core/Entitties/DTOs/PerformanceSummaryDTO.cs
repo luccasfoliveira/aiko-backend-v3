@@ -4,16 +4,16 @@ namespace TheatricalPlayersRefactoringKata.Core.Entitties.DTOs;
 public class PerformanceSummaryDTO
 {
     [XmlIgnore]
-    public string PlayName { get; set; }
+    public string PlayName { get; init; }
 
     [XmlElement("AmountOwed")]
-    public decimal Amount { get; set; }
+    public decimal Amount { get; init; }
 
     [XmlElement("EarnedCredits")]
-    public int EarnedCredits {  get; set; }
+    public int EarnedCredits {  get; init; }
 
     [XmlElement("Seats")]
-    public int Audience { get; set; }
+    public int Audience { get; init; }
 
     public PerformanceSummaryDTO() { }
 

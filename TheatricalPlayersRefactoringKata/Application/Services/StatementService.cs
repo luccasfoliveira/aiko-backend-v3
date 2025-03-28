@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using TheatricalPlayersRefactoringKata.Core.Entitties;
 using TheatricalPlayersRefactoringKata.Core.Entitties.DTOs;
 using TheatricalPlayersRefactoringKata.Core.Interfaces;
@@ -13,7 +14,7 @@ public class StatementService
     public StatementService(IPlayCalculator playCalculator, IStatementFormatter statementFormatter) =>
         (_playCalculator, _statementFormatter) = (playCalculator, statementFormatter);
 
-    public string GenerateStatement(Invoice invoice, Dictionary<string, Play> plays)
+    public async Task<string> GenerateStatementAsync(Invoice invoice, Dictionary<string, Play> plays)
     {
         decimal totalAmount = 0;
         int volumeCredits = 0;
@@ -32,8 +33,8 @@ public class StatementService
             performanceSummaries.Add(new PerformanceSummaryDTO(play.Name, thisAmount, perf.Audience, thisCredits));
         }
         totalAmount /= 100;
-        var statement = new Statement(invoice.Customer, totalAmount, volumeCredits, performanceSummaries);
+        var statement = new StatementDTO(invoice.Customer, totalAmount, volumeCredits, performanceSummaries);
 
-        return _statementFormatter.Format(statement);
+        return await Task.Run(() => _statementFormatter.FormatAsync(statement));
     }
 }
